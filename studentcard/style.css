@@ -1,0 +1,116 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #eef2f7;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    padding: 20px;
+}
+
+.student-card {
+    width: 600px;
+    max-width: 100%;
+    background: white;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+    border: 1px solid #d5dce5;
+}
+
+.card-header {
+    background: #153e75;
+    color: white;
+    text-align: center;
+    padding: 24px 16px;
+}
+
+.card-header h2 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.card-header p {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.card-body {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 28px;
+}
+
+.avatar {
+    width: 150px;
+    height: 190px;
+    object-fit: cover;
+    border: 3px solid #153e75;
+    border-radius: 8px;
+}
+
+.student-info {
+    flex: 1;
+    overflow-wrap: anywhere;
+}
+
+.student-info p {
+    margin-bottom: 18px;
+    line-height: 1.5;
+    font-size: 15px;
+}
+
+.student-info strong {
+    color: #153e75;
+}
+
+.card-footer {
+    background: #f0f4f8;
+    color: #526174;
+    text-align: center;
+    padding: 14px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    border-top: 1px solid #d5dce5;
+}
+
+button {
+    background: #153e75;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+button:hover {
+    background: #24589a;
+}
+
+@media (max-width: 480px) {
+    .card-body {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .avatar {
+        width: 130px;
+        height: 165px;
+    }
+
+    .card-header h2 {
+        font-size: 14px;
+    }
+}
